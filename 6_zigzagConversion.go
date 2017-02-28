@@ -7,16 +7,19 @@ import (
 )
 
 func main() {
+	// I: AB
+	// ______________
+	// O: AB
 	fmt.Println(convert("AB", 1))
-	fmt.Println(convert("PAYPALISHIRING", 3))
+
 	// I: PAYPALISHIRING
 	// P   A   H   N
 	// A P L S I I G
 	// Y   I   R
 	// ______________
 	// O: PAHNAPLSIIGYIR
+	fmt.Println(convert("PAYPALISHIRING", 3))
 
-	fmt.Println(convert("DIGITALPERFORMANCEHIREDMASRURMIRBOBOEV", 4))
 	// I: DIGITALPERFORMANCEHIREDMASRURMIRBOBOEV
 	// D    L    R    H    A    I    E
 	// I  A P  O M  E I  M S  M R  O V
@@ -24,6 +27,7 @@ func main() {
 	// I    R    N    E    U    O
 	// ________________
 	// O: DLRHAIEIAPOMEIMSMROVGTEFACRDRRBBIRNEUO
+	fmt.Println(convert("DIGITALPERFORMANCEHIREDMASRURMIRBOBOEV", 4))
 }
 
 func convert(s string, numRows int) string {
